@@ -1,0 +1,92 @@
+.project-container {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    color: black;
+    border-radius: 5px;
+    padding: 20px 30px 20px 20px; /* Updated padding */
+    /*border: 2px solid rgb(91, 197, 226); */
+    border: 2px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-width 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; 
+}
+
+.project-container:hover {
+    border: 3px solid black; /* Thicker border on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for pop-out effect */
+}
+
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    padding: none;
+}
+
+.project-title {
+
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.project-language {
+    flex: 1;
+    color: black;
+    font-weight: 100;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin: 0px;
+}
+
+.project-about {
+    margin: 20px;
+    margin-right: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    
+}
+.project-info {
+    display: flex;
+    justify-content: space-between; /* Adjusts about and right-side to each end */
+    align-items: center; /* Aligns items vertically */
+}
+
+.right-side {
+    display: flex;
+    flex-direction: row; /* Elements in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-end; /* Align items to the end (right side) */
+}
+
+.icon {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: transform 0.9s ease, border-radius 0.9s ease
+}
+
+.icon:hover {
+    transform: scale(1.00);
+    border-radius: 5px;
+}
+
+#arrow {
+    padding-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+#arrow:hover {
+    transform: translateX(10px) scale(1.08); /* Move the element 10 pixels to the right */
+    cursor: pointer;
+    
+}
+

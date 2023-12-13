@@ -1,0 +1,65 @@
+.about-section {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Ensure children are laid out in a row */
+    overflow: auto;
+  }
+  
+.about-header {
+    margin-left: 50px;
+}
+
+.image {
+    display: inline-block;
+    width: 400px; /* Adjust as needed */
+    border-radius: 6px;
+    margin: 0px;
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: top;
+    margin-right: 20px; /* Space between the image and the text */
+    
+}
+
+.about-text {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    min-width: 400px; /* Adjust as needed */
+    max-width: 800px;
+    font-size: 1.2em; /* Base font size */
+    margin-left: 50px;
+    margin-top: 0px;
+    height:  80%;
+    line-height: 35px;
+}
+
+.language-header {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.languages {
+    color: rgb(18, 134, 166);
+    font-size: 20px;
+}
+
+/* Responsive font sizes using media queries */
+@media (max-width: 768px) {
+    .about-text {
+        font-size: 0.9em; /* Slightly smaller font for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text {
+        font-size: 0.8em; /* Even smaller font for very small screens */
+    }
+}
+
+  
